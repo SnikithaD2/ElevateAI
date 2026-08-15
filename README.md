@@ -24,7 +24,6 @@ ElevateAI is an AI-powered application designed to provide intelligent and inter
 ElevateAI/
 │
 ├── backend/
-│   ├── .env
 │   ├── ...
 │
 ├── frontend/
@@ -35,75 +34,103 @@ ElevateAI/
 │
 ├── .gitignore
 └── README.md
-```
+Getting Started
+1. Clone the Repository
+git clone https://github.com/SnikithaD2/ElevateAI.git
+cd ElevateAI
+2. Set Up the Backend
 
-# Getting Started with Create React App
+Navigate to the backend directory:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+cd backend
 
-## Available Scripts
+Install the required dependencies:
 
-In the project directory, you can run:
+npm install
+3. Configure Environment Variables
 
-### `npm start`
+Create a .env file inside the backend directory:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+GROQ_API_KEY=your_groq_api_key
+XAI_API_KEY=your_xai_api_key
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Replace the placeholder values with your own API keys.
 
-### `npm test`
+Never commit the .env file to GitHub.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Start the Backend
 
-### `npm run build`
+From the backend directory, run:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm start
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The backend will start on the configured local port.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Set Up the Frontend
 
-### `npm run eject`
+Open a new terminal and navigate to the frontend directory:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+cd frontend
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Install the required dependencies:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+npm install
+6. Start the Frontend
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Run:
 
-## Learn More
+npm start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The frontend will be available at:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+http://localhost:3000
+Environment Variables
+Variable	Description
+GROQ_API_KEY	API key used to access Groq AI services
+XAI_API_KEY	API key used to access xAI services
+Available Frontend Scripts
+npm start
 
-### Code Splitting
+Runs the React application in development mode.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm test
 
-### Analyzing the Bundle Size
+Runs the test runner in interactive watch mode.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm run build
 
-### Making a Progressive Web App
+Creates an optimized production build in the build folder.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Security
 
-### Advanced Configuration
+API keys and other sensitive credentials should always be stored in environment variables.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+The .env file is intentionally excluded from Git using .gitignore.
 
-### Deployment
+Never share or commit API keys publicly.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Future Improvements
+Add user authentication
+Improve AI response handling
+Add conversation history
+Add more AI model options
+Improve UI/UX
+Deploy frontend and backend
+Add error handling and logging
+Author
 
-### `npm run build` fails to minify
+Snikitha Grandhe
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License
+
+This project is created for educational and development purposes.
+
+
+
+**One thing:** make sure your `.gitignore` contains this:
+
+
+```text
+backend/.env
+
+That way your API keys won't accidentally get pushed again.
