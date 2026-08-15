@@ -35,6 +35,7 @@ ElevateAI/
 │
 ├── .gitignore
 └── README.md
+```
 
 # Getting Started with Create React App
 
