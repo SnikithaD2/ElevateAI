@@ -34,6 +34,7 @@ ElevateAI/
 │
 ├── .gitignore
 └── README.md
+```
 Getting Started
 1. Clone the Repository
 git clone https://github.com/SnikithaD2/ElevateAI.git
@@ -132,5 +133,6 @@ This project is created for educational and development purposes.
 
 ```text
 backend/.env
+```
 
 That way your API keys won't accidentally get pushed again.
